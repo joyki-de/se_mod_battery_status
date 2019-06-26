@@ -1,12 +1,8 @@
 /*##############################################################################
 # 	Script Name: BatteryStatus_Script_(x10)_v1
 # 	Author: Lightwolf / Alias: Richy Sedlar
-# 	My Youtube Channel:	https://www.youtube.com/channel/UCq4DnC39P6nrGE26xY-63Xg
-#	YT-Video: https://youtu.be/cbfwXqCVVAo
-#
-#   Modified by: DMOrigin
-#   URL: https://www.gamers-shell.de/
-#   Version: v1.2.2
+#   Version: v1.2.3
+#   Fix Error @ Space Engineers 1.191.105
 ################################################################################
 # 	Description:
 This script shows Battery level state on standart LCDs or wide LCDs, as digital Symbols
@@ -133,16 +129,16 @@ BatteryAllStoredEnergyEnabled = GetConfigBool(parser, "display", "ShowTotalStore
 }
 private bool BatteryFilterCallback(IMyTerminalBlock block)
 {
-if (useIsSameConstruct_)
-{
+//if (useIsSameConstruct_)
+//{
 if (BatteryOnlyLocalGrid && !block.IsSameConstructAs(Me))
 return false;
-}
-else
-{
-if (BatteryOnlyLocalGrid && Me.CubeGrid != block.CubeGrid)
-return false;
-}
+//}
+//else
+//{
+//if (BatteryOnlyLocalGrid && Me.CubeGrid != block.CubeGrid)
+//return false;
+//}
 if (BatteryWithNameTag && !block.CustomName.Contains(BatteryNameTag))
 return false;
 return true;
