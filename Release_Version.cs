@@ -1,8 +1,9 @@
 /*##############################################################################
-# 	Script Name: BatteryStatus_Script_(x10)_v1
-# 	Author: Lightwolf / Alias: Richy Sedlar
-#   Version: v1.2.3
-#   Fix Error @ Space Engineers 1.191.105
+# Script Name: BatteryStatus_Script
+# Org-Author: Lightwolf / Alias: Richy Sedlar
+# Version: v1.2.3
+# Fix Error @ Space Engineers 1.191.105
+# Fix by Joyki
 ################################################################################
 # 	Description:
 This script shows Battery level state on standart LCDs or wide LCDs, as digital Symbols
